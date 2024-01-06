@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-from RecordData import bcolors
+from code_crafters_core.RecordData import bcolors
 from collections import UserDict
 from tabulate import tabulate
 from emoji import emojize

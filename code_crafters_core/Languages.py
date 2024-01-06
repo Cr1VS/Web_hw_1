@@ -1,8 +1,8 @@
 from prompt_toolkit.completion import WordCompleter
-from RecordData import bcolors
+from code_crafters_core.RecordData import bcolors
 from abc import ABC, abstractmethod
 from typing import List, Tuple, Union, Optional, Type, Callable
-from NoteFeature import *
+from code_crafters_core.NoteFeature import *
 
 
 class LanguagesCommandsPrompts(ABC):

@@ -1,5 +1,5 @@
-from Record import Record
-from RecordData import *
+from code_crafters_core.Record import Record
+from code_crafters_core.RecordData import *
 from abc import ABC, abstractmethod
 from collections import UserList
 from tabulate import tabulate

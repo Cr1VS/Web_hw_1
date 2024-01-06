@@ -1,4 +1,4 @@
-from RecordData import bcolors
+from code_crafters_core.RecordData import bcolors
 from unidecode import unidecode
 from pathlib import Path
 import shutil

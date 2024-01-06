@@ -1,13 +1,13 @@
-from AvadaKedavra import shutdown_with_countdown
-from FileSorting import executing_command
+from code_crafters_core.AvadaKedavra import shutdown_with_countdown
+from code_crafters_core.FileSorting import executing_command
 from prompt_toolkit.application.current import get_app
-from RecordData import bcolors
-from AddressBook import *
-from NoteFeature import *
+from code_crafters_core.RecordData import bcolors
+from code_crafters_core.AddressBook import *
+from code_crafters_core.NoteFeature import *
 from prompt_toolkit import PromptSession
 from prompt_toolkit.styles import Style
 from pathlib import Path
-from Languages import *
+from code_crafters_core.Languages import *
 import threading
 import asyncio
 import random
@@ -132,6 +132,7 @@ def deserialize(file_path: Path, class_instance: Type[Union[AddressBook, NoteBoo
             instance = class_instance()
         else:
             instance = read_from_file_func(file_path)
+            
     else:
         with open(file_path, "wb"):
             pass
@@ -160,7 +161,7 @@ def main():
     
     file_database = Path(file_name)
     note_database = Path(note_name)  
-       
+
     book = deserialize(file_database, AddressBook, AddressBook.read_from_file)
     note = deserialize(note_database, NoteBook, NoteBook.note_read_from_file)
     
